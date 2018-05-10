@@ -1,0 +1,30 @@
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+AllCops:
+  TargetRubyVersion: 2.5.1
+  TargetRailsVersion: 5.2
+
+Rails:
+  Enabled: true
+
+Layout/AlignHash:
+  EnforcedHashRocketStyle: separator
+  EnforcedColonStyle: separator
+
+Layout/ExtraSpacing:
+  AllowForAlignment: true
+  # When true, forces the alignment of `=` in assignments on consecutive lines.
+  ForceEqualSignAlignment: true
+
+Layout/IndentationConsistency:
+  EnforcedStyle: rails
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Documentation:
+  Enabled: false
