@@ -1,8 +1,8 @@
 # Profession
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/profession`. To experiment with that code, run `bin/console` for an interactive prompt.
+Simple gem with a list of professions (over 1000), for matching and parsing professions in a large body of text. For instance this was helpful for parsing out Wikipedia articles for a little school project for my kids.
 
-TODO: Delete this and the text above, and describe your gem
+Please fill free to add more professions to the list, just send a simple PR. Thank you!
 
 ## Installation
 
@@ -22,7 +22,38 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+  # Return a sorted unique list of all professions
+  Profession::Profession.list
+
+
+  # Check if your value is in the list, and has an exact match
+  Profession::Profession.contains_exact?('Zoo Keeper')
+
+  # Return exact match
+  Profession::Profession.exact_match('Zoo Keeper')
+
+  # Do a fuzzy match
+  Profession::Profession.match('Keeper')
+
+  #   [
+  #     [0] "Book-keeper",
+  #     [1] "Gamekeeper",
+  #     [2] "Gate Keeper",
+  #     [3] "Green Keeper",
+  #     [4] "Housekeeper",
+  #     [5] "Lighthouse Keeper",
+  #     [6] "Lock Keeper",
+  #     [7] "Park Keeper",
+  #     [8] "Shop Keeper",
+  #     [9] "Zoo Keeper"
+  # ]
+
+```
+
+### Important!
+
+Matching is NOT case-sensitive and will also strip extra spaces when comparing.
 
 ## Development
 
@@ -32,7 +63,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/profession. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/konung/profession. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
