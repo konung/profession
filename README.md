@@ -1,4 +1,5 @@
 # Profession
+[![Build Status](https://travis-ci.org/konung/profession.svg?branch=master)](https://travis-ci.org/konung/profession)
 
 Simple gem with a list of professions (over 1000), for matching and parsing professions in a large body of text. For instance this was helpful for parsing out Wikipedia articles for a little school project for my kids.
 
