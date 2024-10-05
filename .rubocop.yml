@@ -5,8 +5,7 @@ Metrics/LineLength:
   Max: 120
 
 AllCops:
-  TargetRubyVersion: 2.5.1
-  TargetRailsVersion: 5.2
+  TargetRubyVersion: 3.0
 
 Rails:
   Enabled: true
