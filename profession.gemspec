@@ -30,10 +30,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'minitest', '>= 5.0'
-  spec.add_development_dependency 'pry', '>= 0.11'
-  spec.add_development_dependency 'pry-byebug', '>= 3.5'
-  spec.add_development_dependency 'pry-doc', '>= 0.11'
-  spec.add_development_dependency 'rake', '>= 10.0'
-  spec.add_development_dependency 'rubocop', '>= 0.55'
+  spec.add_development_dependency 'minitest', '~> 5.0'
+  spec.add_development_dependency 'pry', '~> 0.14'
+  spec.add_development_dependency 'pry-byebug', '~> 3.10'
+  spec.add_development_dependency 'pry-doc', '~> 1.5'
+  spec.add_development_dependency 'rake', '~> 13.2'
+  spec.add_development_dependency 'rubocop', '~> 1.66'
 end
